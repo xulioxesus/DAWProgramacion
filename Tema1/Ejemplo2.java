@@ -2,11 +2,11 @@ class Ejemplo2
 {
     public static void main(String args[])
     {
-    	int dividendo = (int) 20.0;
+    	double dividendo = 20;
     	
-    	int divisor = (int) 6.0;
+    	int divisor = 6;
     	
-    	int sumarAlFinal = (int) 3.0;
+    	int sumarAlFinal = 3;
     	
         System.out.println((dividendo / divisor) + sumarAlFinal);
     }

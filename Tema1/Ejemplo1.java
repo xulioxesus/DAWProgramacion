@@ -1,6 +1,6 @@
 class Ejemplo1
 {
-    public static void main(String args[])
+    public static void maini(String argumentos[])
     {
     	double dividendo = 20.0;
     	
