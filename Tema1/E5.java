@@ -16,6 +16,8 @@ public class E5 {
         System.out.println("Enter number 2:");
         y = lector.nextInt();
 
+        lector.close();
+
         sum = x + y;
         sub = x - y;
         mult = x * y;
@@ -24,7 +26,7 @@ public class E5 {
         System.out.println("sum: " + sum);
         System.out.println("sub: " + sub);
         System.out.println("mult: " + mult);
-        System.out.println("div: " + sum);
+        System.out.println("div: " + div);
 
     }
 }
