@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch E14",
+            "request": "launch",
+            "mainClass": "E14",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch E13",
             "request": "launch",
             "mainClass": "E13",
