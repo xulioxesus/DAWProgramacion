@@ -1,4 +1,4 @@
-class Ejemplo1
+class E1
 {
     public static void maini(String argumentos[])
     {
