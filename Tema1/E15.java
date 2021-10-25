@@ -1,5 +1,3 @@
-package del11al15;
-
 import java.util.Scanner;
 
 //realiza un programa que lea un número entero del 1 al 10 y que muestre su valor en letra:
