@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Basico",
+            "request": "launch",
+            "mainClass": "Basico",
+            "projectName": "DAWProgramacion_4b96c5bf"
+        },
+        {
+            "type": "java",
             "name": "Launch E25",
             "request": "launch",
             "mainClass": "E25",
