@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch EntradaPrueba",
+            "request": "launch",
+            "mainClass": "EntradaPrueba",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
             "name": "Launch MatesPruebas",
             "request": "launch",
             "mainClass": "MatesPruebas",
