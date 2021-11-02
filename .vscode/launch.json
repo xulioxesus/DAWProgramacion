@@ -9,6 +9,13 @@
             "name": "Launch EntradaPrueba",
             "request": "launch",
             "mainClass": "EntradaPrueba",
+            "projectName": "DAWProgramacion_f3290baf"
+        },
+        {
+            "type": "java",
+            "name": "Launch EntradaPrueba",
+            "request": "launch",
+            "mainClass": "EntradaPrueba",
             "projectName": "DAWProgramacionJulio_a2aa9f36"
         },
         {
