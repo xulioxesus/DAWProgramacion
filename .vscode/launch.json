@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch E37",
+            "request": "launch",
+            "mainClass": "E37",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch E35",
+            "request": "launch",
+            "mainClass": "E35",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch E36",
+            "request": "launch",
+            "mainClass": "E36",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
             "name": "Launch EntradaPrueba",
             "request": "launch",
             "mainClass": "EntradaPrueba",
