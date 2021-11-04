@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Iterator;
@@ -9,11 +10,39 @@ import java.util.Random;
 public class Liga {
 
     static Random random = new Random();
+    static ArrayList<Jornada> campeonato = new ArrayList<Jornada>();
+    static Set<Pareja> parejas = new HashSet<Pareja>();
+    static String[] jugadores = {"Alberto", "Bartolo", "Carlos", "Daniel", "Emilio", "Fernando", "Gerardo","Hipolito" };
     public static void main(String[] args) {
-        
-        Set<Pareja> parejas = new HashSet<Pareja>();
-        String[] jugadores = {"Alberto", "Bartolo", "Carlos", "Daniel", "Emilio", "Fernando", "Gerardo","Hipolito" };
 
+        rellenarParejas(parejas, jugadores);
+
+        for (int i = 0; i < jugadores.length-1; i++) {
+            System.out.println("================================");
+            System.out.println("Jornada " + (i + 1));
+            System.out.println("================================");
+
+            Jornada jornada = new Jornada();
+
+            while (jornada.size() < jugadores.length/2){
+                Pareja temp = getRandomElement(parejas);
+
+                if (!jornada.isInConflict(temp)){
+                    jornada.parejas.add(temp);
+                    parejas.remove(temp);
+                }
+            }
+            System.out.println(jornada);
+        }
+
+        System.out.println("================================");
+        System.out.println("Parejas no asignadas");
+        System.out.println("================================");
+        System.out.println(parejas);
+        System.out.println("Fin programa");
+    }
+
+    private static void rellenarParejas(Set<Pareja> parejas, String[] jugadores) {
         System.out.println("================================");
         System.out.println("Parejas");
         System.out.println("================================");
@@ -24,36 +53,6 @@ public class Liga {
                 parejas.add(new Pareja(jugadores[i], jugadores[j]));
             }
         }
-
-        for (int i = 0; i < jugadores.length-1; i++) {
-            System.out.println("================================");
-            System.out.println("Jornada " + (i + 1));
-            System.out.println("================================");
-
-            Jornada jornada = new Jornada();
-
-            int j = 0;
-            int max = parejas.size();
-
-            while (jornada.size() < jugadores.length/2 && j < max){
-                Pareja temp = getElement(parejas,j);
-
-                if (!jornada.isInConflict(temp)){
-                    jornada.parejas.add(temp);
-                    parejas.remove(temp);
-                    max = parejas.size();
-                }
-                //System.out.println(j);
-                j++;
-            }
-            System.out.println(jornada);
-        }
-
-        System.out.println("================================");
-        System.out.println("Parejas no asignadas");
-        System.out.println("================================");
-        System.out.println(parejas);
-        System.out.println("Fin programa");
     }
 
     private static <E> E getRandomElement(Set<? extends E> set){
