@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Liga",
+            "request": "launch",
+            "mainClass": "Liga",
+            "projectName": "DAWProgramacion_864f25d0"
+        },
+        {
+            "type": "java",
             "name": "Launch E37",
             "request": "launch",
             "mainClass": "E37",

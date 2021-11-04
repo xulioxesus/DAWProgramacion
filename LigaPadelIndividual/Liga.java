@@ -25,7 +25,7 @@ public class Liga {
             }
         }
 
-        for (int i = 0; i < jugadores.length; i++) {
+        for (int i = 0; i < jugadores.length-1; i++) {
             System.out.println("================================");
             System.out.println("Jornada " + (i + 1));
             System.out.println("================================");
@@ -33,19 +33,26 @@ public class Liga {
             Jornada jornada = new Jornada();
 
             int j = 0;
+            int max = parejas.size();
 
-            while (jornada.size() < jugadores.length/2){
+            while (jornada.size() < jugadores.length/2 && j < max){
                 Pareja temp = getElement(parejas,j);
 
                 if (!jornada.isInConflict(temp)){
                     jornada.parejas.add(temp);
                     parejas.remove(temp);
+                    max = parejas.size();
                 }
+                //System.out.println(j);
                 j++;
             }
             System.out.println(jornada);
         }
 
+        System.out.println("================================");
+        System.out.println("Parejas no asignadas");
+        System.out.println("================================");
+        System.out.println(parejas);
         System.out.println("Fin programa");
     }
 
