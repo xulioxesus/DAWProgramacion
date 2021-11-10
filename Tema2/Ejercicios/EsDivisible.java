@@ -1,7 +1,17 @@
 public class EsDivisible {
 
     public static boolean esDivisible(int n, int m){
-        return (n%m) == 0;
+
+        boolean resultado = false;
+
+        if (n%m == 0){
+            resultado = true;
+        }
+        else{
+            resultado = false;
+        }
+
+        return resultado;
     }
     public static void main(String[] args) {
         boolean prueba1 = esDivisible(4,2);
