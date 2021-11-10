@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch EsTriangulo",
+            "request": "launch",
+            "mainClass": "EsTriangulo",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch EsDivisible",
+            "request": "launch",
+            "mainClass": "EsDivisible",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch E05",
+            "request": "launch",
+            "mainClass": "E05",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch E09",
+            "request": "launch",
+            "mainClass": "E09",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Liga",
+            "request": "launch",
+            "mainClass": "Liga",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
             "name": "Launch P369ContandoArena",
             "request": "launch",
             "mainClass": "P369ContandoArena",
