@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Primos",
+            "request": "launch",
+            "mainClass": "Primos",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Primo",
+            "request": "launch",
+            "mainClass": "Primo",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch LetraDni",
+            "request": "launch",
+            "mainClass": "LetraDni",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Positivos2",
+            "request": "launch",
+            "mainClass": "Positivos2",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Potencia",
+            "request": "launch",
+            "mainClass": "Potencia",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Positivos",
+            "request": "launch",
+            "mainClass": "Positivos",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
             "name": "Launch EsTriangulo",
             "request": "launch",
             "mainClass": "EsTriangulo",
