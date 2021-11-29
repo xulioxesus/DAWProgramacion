@@ -8,6 +8,7 @@ import java.util.Random;
  * Liga
  */
 public class Liga {
+    final static byte NUMJUGADORES = 16;
 
     static Random random = new Random();
     static ArrayList<Jornada> campeonato = new ArrayList<Jornada>();
@@ -15,7 +16,8 @@ public class Liga {
     static String[] jugadores = {"Alberto", "Bartolo", "Carlos", "Daniel", "Emilio", "Fernando", "Gerardo","Hipolito" };
     public static void main(String[] args) {
 
-        rellenarParejas(parejas, jugadores);
+        jugadores = rellenarJugadores(NUMJUGADORES);
+        parejas = rellenarParejas(jugadores);
 
         for (int i = 0; i < jugadores.length-1; i++) {
             System.out.println("================================");
@@ -42,17 +44,33 @@ public class Liga {
         System.out.println("Fin programa");
     }
 
-    private static void rellenarParejas(Set<Pareja> parejas, String[] jugadores) {
+    private static Set<Pareja> rellenarParejas(String[] jugadores) {
         System.out.println("================================");
         System.out.println("Parejas");
         System.out.println("================================");
 
+        Set<Pareja> resultado = new HashSet<Pareja>();
+
         for (int i = 0; i < jugadores.length-1; i++) {
             for (int j = i+1; j <= jugadores.length-1; j++) {
                 System.out.println(jugadores[i] + " - " + jugadores[j]);
-                parejas.add(new Pareja(jugadores[i], jugadores[j]));
+                resultado.add(new Pareja(jugadores[i], jugadores[j]));
             }
         }
+
+        return resultado;
+    }
+
+    private static String[] rellenarJugadores(int numJugadores){
+        char inicial = 'a';
+        String [] resultado = new String[numJugadores];
+
+        for (int i = 0; i < numJugadores; i++) {
+            resultado[i] = Character.toString(inicial).repeat(3);
+            inicial++;
+        }
+
+        return resultado;
     }
 
     private static <E> E getRandomElement(Set<? extends E> set){

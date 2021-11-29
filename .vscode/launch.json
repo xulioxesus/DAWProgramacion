@@ -6,143 +6,94 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Primos",
+            "request": "launch",
+            "mainClass": "Primos",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Primo",
+            "request": "launch",
+            "mainClass": "Primo",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch LetraDni",
+            "request": "launch",
+            "mainClass": "LetraDni",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Positivos2",
+            "request": "launch",
+            "mainClass": "Positivos2",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Potencia",
+            "request": "launch",
+            "mainClass": "Potencia",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch Positivos",
+            "request": "launch",
+            "mainClass": "Positivos",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch EsTriangulo",
+            "request": "launch",
+            "mainClass": "EsTriangulo",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch EsDivisible",
+            "request": "launch",
+            "mainClass": "EsDivisible",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch E05",
+            "request": "launch",
+            "mainClass": "E05",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch E09",
+            "request": "launch",
+            "mainClass": "E09",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
             "name": "Launch Liga",
             "request": "launch",
             "mainClass": "Liga",
-            "projectName": "DAWProgramacion_864f25d0"
-        },
-        {
-            "type": "java",
-            "name": "Launch E37",
-            "request": "launch",
-            "mainClass": "E37",
             "projectName": "DAWProgramacionJulio_a2aa9f36"
         },
         {
             "type": "java",
-            "name": "Launch E35",
+            "name": "Launch P369ContandoArena",
             "request": "launch",
-            "mainClass": "E35",
-            "projectName": "DAWProgramacionJulio_a2aa9f36"
-        },
-        {
-            "type": "java",
-            "name": "Launch E36",
-            "request": "launch",
-            "mainClass": "E36",
-            "projectName": "DAWProgramacionJulio_a2aa9f36"
-        },
-        {
-            "type": "java",
-            "name": "Launch EntradaPrueba",
-            "request": "launch",
-            "mainClass": "EntradaPrueba",
+            "mainClass": "P369ContandoArena",
             "projectName": "DAWProgramacion_f3290baf"
         },
         {
             "type": "java",
-            "name": "Launch EntradaPrueba",
+            "name": "Launch P116HolaMundo",
             "request": "launch",
-            "mainClass": "EntradaPrueba",
-            "projectName": "DAWProgramacionJulio_a2aa9f36"
-        },
-        {
-            "type": "java",
-            "name": "Launch MatesPruebas",
-            "request": "launch",
-            "mainClass": "MatesPruebas",
-            "projectName": "DAWProgramacionJulio_a2aa9f36"
-        },
-        {
-            "type": "java",
-            "name": "Launch Mates",
-            "request": "launch",
-            "mainClass": "Mates",
-            "projectName": "DAWProgramacionJulio_a2aa9f36"
-        },
-        {
-            "type": "java",
-            "name": "Launch Basico",
-            "request": "launch",
-            "mainClass": "Basico",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch E25",
-            "request": "launch",
-            "mainClass": "E25",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch Asignaciones",
-            "request": "launch",
-            "mainClass": "Asignaciones",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch Control01",
-            "request": "launch",
-            "mainClass": "Control01",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch While",
-            "request": "launch",
-            "mainClass": "While",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch E14",
-            "request": "launch",
-            "mainClass": "E14",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch E13",
-            "request": "launch",
-            "mainClass": "E13",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch E12",
-            "request": "launch",
-            "mainClass": "E12",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch E11",
-            "request": "launch",
-            "mainClass": "E11",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch E10",
-            "request": "launch",
-            "mainClass": "E10",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch E8",
-            "request": "launch",
-            "mainClass": "E8",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch E6",
-            "request": "launch",
-            "mainClass": "E6",
-            "projectName": "DAWProgramacion_4b96c5bf"
+            "mainClass": "P116HolaMundo",
+            "projectName": "DAWProgramacion_f3290baf"
         },
         {
             "type": "java",
@@ -155,21 +106,14 @@
             "name": "Launch Ejemplo1",
             "request": "launch",
             "mainClass": "Ejemplo1",
-            "projectName": "DAWProgramacion_4b96c5bf"
+            "projectName": "DAWProgramacion_f3290baf"
         },
         {
             "type": "java",
             "name": "Launch Ejemplo2",
             "request": "launch",
             "mainClass": "Ejemplo2",
-            "projectName": "DAWProgramacion_4b96c5bf"
-        },
-        {
-            "type": "java",
-            "name": "Launch Ejemplo3",
-            "request": "launch",
-            "mainClass": "Ejemplo3",
-            "projectName": "DAWProgramacion_4b96c5bf"
+            "projectName": "DAWProgramacion_f3290baf"
         }
     ]
 }

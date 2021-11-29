@@ -1,9 +1,10 @@
 {
     "java.project.sourcePaths": [
-        "Tema2",
+        "Tema2/Ejercicios",
         "Tema1",
         "LigaPadelIndividual",
-        "Controles",
-        "Tema4"
+        "Controles/Control02",
+        "AceptaElReto",
+        "Objetos"
     ]
 }
