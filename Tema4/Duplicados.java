@@ -1,5 +1,3 @@
-package del1al4;
-
 import java.util.Arrays;
 
 /**
