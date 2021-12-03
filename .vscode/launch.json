@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch E07MoverCerosV2",
+            "request": "launch",
+            "mainClass": "E07MoverCerosV2",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch E07MoverCeros",
+            "request": "launch",
+            "mainClass": "E07MoverCeros",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
             "name": "Launch E05Iguales",
             "request": "launch",
             "mainClass": "E05Iguales",
