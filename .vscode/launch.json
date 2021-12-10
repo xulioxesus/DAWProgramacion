@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch E11HundirLaFlota",
+            "request": "launch",
+            "mainClass": "E11HundirLaFlota",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch E10Tablero",
+            "request": "launch",
+            "mainClass": "E10Tablero",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch E09ValoresACero",
+            "request": "launch",
+            "mainClass": "E09ValoresACero",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch E08RellenarMatriz",
+            "request": "launch",
+            "mainClass": "E08RellenarMatriz",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
             "name": "Launch E07MoverCerosV2",
             "request": "launch",
             "mainClass": "E07MoverCerosV2",
