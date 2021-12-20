@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Calculadora",
+            "request": "launch",
+            "mainClass": "Calculadora",
+            "projectName": "DAWProgramacion_931daa1e"
+        },
+        {
+            "type": "java",
             "name": "Launch Comparar",
             "request": "launch",
             "mainClass": "strings.Comparar",
