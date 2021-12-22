@@ -1,5 +1,3 @@
-package strings;
-
 public class Reemplazar {
 	/*
 	 * Escribe un programa que pida una cadena y unos caracteres a reemplazar por

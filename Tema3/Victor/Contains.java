@@ -1,5 +1,3 @@
-package strings;
-
 /*
  * Escribe un programa que muestre si una cadena contiene (o no) a otra
  */

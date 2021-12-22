@@ -1,6 +1,3 @@
-package strings;
-
-
 /*
  * Escribe un programa que compruebe si una cadena acaba con el contenido de otra
  */

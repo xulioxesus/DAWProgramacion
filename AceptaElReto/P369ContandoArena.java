@@ -16,5 +16,8 @@ public class P369ContandoArena {
 
             entrada = lector.nextInt();
         }
+
+        lector.close();
+
     }
 }

@@ -1,5 +1,3 @@
-package strings;
-
 /*
  * Hay un tipo de pasatiempos que propone descifrar un texto del que se han suprimido las vocales. 
  * Por ejemplo, el texto ".n .j.mpl. d. p.s.t..mp.s" se descrifra sustituyendo cada punto por una vocal. 

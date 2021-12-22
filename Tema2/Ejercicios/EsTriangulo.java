@@ -17,5 +17,8 @@ public class EsTriangulo {
     public static void main(String[] args) {
         boolean prueba1 = esTriangulo(5,4,2);
         boolean prueba2 = esTriangulo(17,3,1);
+
+        System.out.println(prueba1);
+        System.out.println(prueba2);
     }
 }

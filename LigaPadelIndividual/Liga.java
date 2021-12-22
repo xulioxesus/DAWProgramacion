@@ -98,7 +98,7 @@ public class Liga {
         return randomElement;
     }
 
-    private static <E> E getElement(Set<? extends E> set, int pos){
+    /* private static <E> E getElement(Set<? extends E> set, int pos){
 
         //get an iterator
         Iterator<? extends E> iterator = set.iterator();
@@ -117,5 +117,5 @@ public class Liga {
         }
 
         return randomElement;
-    }
+    } */
 }

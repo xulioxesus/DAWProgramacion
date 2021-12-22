@@ -1,4 +1,3 @@
-package strings;
 /*
  * Realiza un programa que diga si una cadena es mayor, menor o igual que otra cadena. 
  * Ambas cadenas se deben leer desde el teclado con Scanner.

@@ -23,5 +23,8 @@ public class E36 {
         }
 
         System.out.println(maximo);
+
+        lector.close();
+
     }
 }

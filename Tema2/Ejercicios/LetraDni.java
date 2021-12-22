@@ -15,7 +15,7 @@ public class LetraDni {
     public static void main(String[] args) {
 
         // Llamar a letraDni con un entero directamente
-        System.out.println(eop(12345678));
+        System.out.println(letraDni(12345678));
 
         // Llamar a letraDni pidiendo el entero por teclado
         Scanner lector = new Scanner(System.in);

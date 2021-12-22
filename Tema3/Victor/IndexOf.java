@@ -1,5 +1,3 @@
-package strings;
-
 /*
  * Escribe un programa que devuelva la posición de la última ocurrencia de una cadena en otra
  */

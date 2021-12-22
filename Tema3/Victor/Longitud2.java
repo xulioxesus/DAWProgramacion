@@ -1,4 +1,3 @@
-package strings;
 
 /*
  * Realiza un programa que lea una cadena de texto y nos diga

@@ -1,4 +1,3 @@
-package strings;
 
 /*
  * Un texto está bien parentizado si por cada paréntesis abierto hay

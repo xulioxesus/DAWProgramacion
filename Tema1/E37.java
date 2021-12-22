@@ -28,5 +28,8 @@ public class E37 {
 
         System.out.println("Max: " + max);
         System.out.println("Min: " + min);
+
+        lector.close();
+
     }
 }

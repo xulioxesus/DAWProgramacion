@@ -1,4 +1,3 @@
-package strings;
 
 /*
  * Escribe un programa que lea una cadena y un número entero k y muestre el mensaje 

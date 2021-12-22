@@ -1,5 +1,3 @@
-package strings;
-
 /*
  * Realiza un programa que concatene dos strings en un tercer string
  */

@@ -1,4 +1,3 @@
-package strings;
 /*
  * Realiza un programa que extraiga de una cadena la cadena comprendida entre dos posiciones
  */

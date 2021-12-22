@@ -18,5 +18,10 @@ public class EsDivisible {
         boolean prueba2 = esDivisible(4,3);
         boolean prueba3 = esDivisible(3,4);
         boolean prueba4 = esDivisible(2,8);
+
+        System.out.println(prueba1);
+        System.out.println(prueba2);
+        System.out.println(prueba3);
+        System.out.println(prueba4);
     }
 }

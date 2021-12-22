@@ -12,5 +12,7 @@ public class P116HolaMundo {
         for (int i = 0; i < cantidad; i++) {
             System.out.println("Hola mundo.");
         }
+
+        lector.close();
     }
 }

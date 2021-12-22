@@ -1,7 +1,3 @@
-package strings;
-
-
-
 public class Siglas {
 	/*
 	 * Realiza un programa que lea un frase y la convierta en unas siglas. Por

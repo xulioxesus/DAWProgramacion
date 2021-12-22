@@ -1,5 +1,3 @@
-package strings;
-
 /*
  * Escribe un programa que lea una frase del teclado y 
  * luego imprima las palabras que la forman de forma invertida.

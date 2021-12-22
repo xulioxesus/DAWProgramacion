@@ -19,5 +19,8 @@ public class E05 {
         */
 
         //System.out.println(primero + "" + segundo + "" + tercero);
+
+        lector.close();
+
     }
 }

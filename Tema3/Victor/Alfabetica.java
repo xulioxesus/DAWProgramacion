@@ -1,5 +1,3 @@
-package strings;
-
 /*
  * Una palabra es alfabética si todas sus letras están ordenadas alfabéticamente.
  *  Por ejemplo, "amor", "chino" e "himno" son palabras alfabéticas. 

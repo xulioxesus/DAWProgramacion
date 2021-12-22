@@ -14,7 +14,7 @@ public class Perro {
     public static void main(String[] args) {
         System.out.println("Inicio del programa");
         
-        Perro.ladrar();
-        Perro.nombre = "Laika";
+        //Perro.ladrar();
+        //Perro.nombre = "Laika";
     }
 }

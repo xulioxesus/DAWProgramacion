@@ -1,6 +1,3 @@
-package strings;
-
-
 /*
  * Realiza un programa que diga si una cadena es mayor, menor o igual que otra cadena sin importar si 
  * son mayúsculas o minúsculas (ignore case, en inglés). 
