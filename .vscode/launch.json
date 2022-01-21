@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TicketMachineTest",
+            "request": "launch",
+            "mainClass": "TicketMachineTest",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
+            "name": "Launch TicketMachineTest",
+            "request": "launch",
+            "mainClass": "Ejercicios.TicketMachineTest",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
             "name": "Launch SillaTest",
             "request": "launch",
             "mainClass": "SillaTest",
