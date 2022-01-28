@@ -9,7 +9,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  */
-public class TicketMachine
+public class TicketMachine2
 {
     // The price of a ticket from this machine.
     private int price;
@@ -18,14 +18,29 @@ public class TicketMachine
     // The total amount of money collected by this machine.
     private int total;
 
+    private int discount;
+
     /**
      * Create a machine that issues tickets of the given price.
      */
-    public TicketMachine(int cost)
+    public TicketMachine2(int cost)
     {
         price = cost;
         balance = 0;
         total = 0;
+        discount = 0;
+    }
+
+    public int getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount() {
+        this.discount = 20;
+    }
+
+    public void resetDiscount(){
+        this.discount = 0;
     }
 
     /**
@@ -67,23 +82,26 @@ public class TicketMachine
      */
     public void printTicket()
     {
-        if(balance >= price) {
+        int actualPrice = price * (100 - discount)/100;
+        int amountToPay = actualPrice - balance;
+
+        if(amountToPay <= 0) {
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
             System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
+            System.out.println("# " + actualPrice + " cents.");
             System.out.println("##################");
             System.out.println();
 
             // Update the total collected with the price.
-            total = total + price;
+            total = total + actualPrice;
             // Reduce the balance by the price.
-            balance = balance - price;
+            balance = balance - actualPrice;
         }
         else {
             System.out.println("You must insert at least: " +
-                               (price - balance) + " more cents.");
+                               (amountToPay) + " more cents.");
                     
         }
     }
@@ -98,5 +116,11 @@ public class TicketMachine
         amountToRefund = balance;
         balance = 0;
         return amountToRefund;
+    }
+
+    public int emptyMachine(){
+        int temp = total;
+        total = 0;
+        return temp;
     }
 }
