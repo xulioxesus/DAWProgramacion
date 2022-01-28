@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HeaterTest",
+            "request": "launch",
+            "mainClass": "HeaterTest",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
             "name": "Launch TicketMachineTest",
             "request": "launch",
             "mainClass": "TicketMachineTest",
