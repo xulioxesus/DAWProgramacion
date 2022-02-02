@@ -26,7 +26,7 @@ class Alumno{
     }
 
     public void preguntarDuda(){
-        System.out.println(nombre + " levanta la mano");
+        System.out.println(nombre + " levanta la mano " + id);
     }
 
     public static void imprimirInforme(){

@@ -8,6 +8,11 @@ public class PajaroTest {
         p4 = new Pajaro(13);
 
         Pajaro.muestraPajaros();
-        System.out.println(Pajaro.numPajaros);
+        //System.out.println(Pajaro.numPajaros);
+
+        p1.toString();
+        p2.toString();
+        p3.toString();
+        p4.toString();
     }
 }
