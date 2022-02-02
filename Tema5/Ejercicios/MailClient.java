@@ -52,6 +52,7 @@ public class MailClient
      */
     public void sendMailItem(String to, String subject,String message)
     {
+        // to puede ser "Julio;Pepe;María" o "Jose"
         MailItem item = new MailItem(user, to, subject, message);
         server.post(item);
     }

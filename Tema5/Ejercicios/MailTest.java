@@ -3,11 +3,18 @@ public class MailTest {
         
         MailServer server = new MailServer();
 
-        MailClient client = new MailClient(server, "Julio J. León");
+        MailClient julio = new MailClient(server, "Julio J. León");
+        MailClient manuel = new MailClient(server, "Manuel López");
 
         System.out.println(server.howManyMailItems("Pepito"));
 
-        client.sendMailItem("Pepito", "Holiiiiii", "Bla bla bla bla bla bla");
+        julio.sendMailItem("Pepito", "Holiiiiii", "Bla bla bla bla bla bla");
+        manuel.sendMailItem("Pepito", "Chau", "No te hablo más");
+
+        System.out.println(server.howManyMailItems("Pepito"));
+
+        MailItem temp = server.getNextMailItem("Pepito");
+        temp.print();
 
         System.out.println(server.howManyMailItems("Pepito"));
 
