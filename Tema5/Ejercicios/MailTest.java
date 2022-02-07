@@ -8,7 +8,7 @@ public class MailTest {
 
         System.out.println(server.howManyMailItems("Pepito"));
 
-        julio.sendMailItem("Pepito", "Holiiiiii", "Bla bla bla bla bla bla");
+        julio.sendMailItem("Pepito;Juan;Maria", "Holiiiiii", "Bla bla bla bla bla bla");
         manuel.sendMailItem("Pepito", "Chau", "No te hablo más");
 
         System.out.println(server.howManyMailItems("Pepito"));

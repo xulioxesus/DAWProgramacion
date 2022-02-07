@@ -52,8 +52,25 @@ public class MailClient
      */
     public void sendMailItem(String to, String subject,String message)
     {
-        // to puede ser "Julio;Pepe;María" o "Jose"
-        MailItem item = new MailItem(user, to, subject, message);
-        server.post(item);
+        String [] nombres = to.split(";");
+        
+        for (String nombre : nombres) {
+            MailItem item = new MailItem(user, nombre, subject, message);
+            server.post(item);
+            System.out.println("Correo enviado a " + nombre);    
+        }
+        
+    }
+
+    public void forwardLastMailItem(String forwardTo)
+    {
+        MailItem item = server.getNextMailItem(user);
+        if(item == null) {
+            System.out.println("No new mail to forward.");
+        }
+        else {
+            item.print();
+            server.post(item);
+        }
     }
 }
