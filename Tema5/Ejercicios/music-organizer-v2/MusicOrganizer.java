@@ -82,4 +82,65 @@ public class MusicOrganizer
     {
         player.stop();
     }
+
+    public void listAllFiles(){
+        for (String cancion : files) {
+            System.out.println(cancion);
+        }
+    }
+
+    public void listMatching(String match){
+
+        for (String cancion : getMatching(match)) {    
+            System.out.println(cancion);
+        }
+
+        if (getMatching(match).size() == 0){
+            System.out.println("No se ha encontrado ninguna canción coincidente");
+        }
+    }
+
+    public void playMatching(String match){
+
+        ArrayList<String> canciones = getMatching(match);
+
+        for (String cancion : canciones) {
+            System.out.println(cancion);
+            player.playSample(cancion);
+        }
+    }
+
+    public ArrayList<String> getMatching(String match){
+        
+        ArrayList<String> resultado = new ArrayList<>();
+
+        for (String cancion : files) {
+            if(cancion.contains(match)){
+                resultado.add(cancion);
+            }
+        }
+
+        return resultado;
+    }
+
+    public int findFirst(String match){
+
+        int indice = 0;
+        int resultado = -1;
+
+        while (indice < files.size()) {
+            
+            if(files.get(indice).contains(match)){
+                resultado = indice;
+                break;
+            }else{
+                indice++;
+            }
+        }
+
+        return resultado;
+
+    }
+
+
 }

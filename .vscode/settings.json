@@ -10,7 +10,8 @@
         "Controles/Control02",
         "AceptaElReto",
         "Tema5",
-        "Tema5/Ejercicios"
+        "Tema5/Ejercicios",
+        "Tema5/Ejercicios/music-organizer-v2"
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
