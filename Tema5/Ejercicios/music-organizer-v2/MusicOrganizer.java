@@ -131,7 +131,8 @@ public class MusicOrganizer
         while (indice < files.size()) {
             
             if(files.get(indice).contains(match)){
-                resultado = indice;
+                
+                
                 break;
             }else{
                 indice++;
