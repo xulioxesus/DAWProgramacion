@@ -13,6 +13,10 @@ public class Track
     private String title;
     // Where the track is stored.
     private String filename;
+
+    private int playCount;
+
+    private String album;
     
     /**
      * Constructor for objects of class Track.
@@ -62,16 +66,15 @@ public class Track
     {
         return filename;
     }
-        
-    /**
-     * Return details of the track: artist, title and file name.
-     * @return The track's details.
-     */
-    public String getDetails()
-    {
-        return artist + ": " + title + "  (file: " + filename + ")";
+
+    public void setAlbum(String album){
+        this.album = album;
     }
-    
+
+    public String getAlbum(){
+        return album;
+    }
+          
     /**
      * Set details of the track.
      * @param artist The track's artist.
@@ -84,5 +87,19 @@ public class Track
         this.title = title;
         this.filename = filename;
     }
-    
+
+    public void resetPlayCount(){
+        playCount = 0;
+    }
+
+    public void incPlayCount(){
+        playCount++;
+    }
+
+    @Override
+    public String toString(){
+        return artist + ": " + title +
+                "  (file: " + filename + ")" + 
+                " " + album;
+    }
 }

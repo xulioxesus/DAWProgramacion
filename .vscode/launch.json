@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Array1000",
+            "request": "launch",
+            "mainClass": "Array1000",
+            "projectName": "DAWProgramacionJulio_a2aa9f36"
+        },
+        {
+            "type": "java",
             "name": "Launch MailTest",
             "request": "launch",
             "mainClass": "MailTest",

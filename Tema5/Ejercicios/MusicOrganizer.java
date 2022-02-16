@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import javax.sound.midi.Track;
+
 /**
  * A class to hold details of audio files.
  * 
@@ -10,13 +12,13 @@ public class MusicOrganizer
 {
     // An ArrayList for storing the file names of music files.
     private ArrayList<String> files;
-        
+      
     /**
      * Create a MusicOrganizer
      */
     public MusicOrganizer()
     {
-        files = new ArrayList<>();
+        files = new ArrayList<String>();
     }
     
     /**

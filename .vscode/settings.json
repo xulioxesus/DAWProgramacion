@@ -1,17 +1,15 @@
 {
     "java.project.sourcePaths": [
-        "Tema4",
-        "Tema3/Victor",
-        "Tema3",
-        "Tema2/Ejercicios",
-        "Tema1",
-        "Objetos",
-        "LigaPadelIndividual",
-        "Controles/Control02",
         "AceptaElReto",
-        "Tema5",
-        "Tema5/Ejercicios",
-        "Tema5/Ejercicios/music-organizer-v2"
+        "Controles/Control02",
+        "LigaPadelIndividual",
+        "Objetos",
+        "Tema1",
+        "Tema2/Ejercicios",
+        "Tema3",
+        "Tema3/Victor",
+        "Tema4",
+        "Tema5/Ejercicios/music-organizer-v5"
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
