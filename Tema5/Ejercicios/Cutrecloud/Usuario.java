@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Usuario{
+public class Usuario implements ParserXML{
     private int id;
     private String email;
     private String password;
@@ -51,5 +52,44 @@ public class Usuario{
     }
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public static boolean removeOneByName(String email){
+
+        boolean resultado = false;
+
+        for (Usuario person : list) {
+            if (person.email.equals(email)){
+                list.remove(person);
+                resultado = true;
+                break;
+            }
+        }
+
+        return resultado;
+    }
+
+    public static void removeAllByDomain(String domain){
+
+        Iterator<Usuario> it = list.iterator();
+
+        while(it.hasNext()){
+            Usuario user = it.next();
+
+            if (user.email.endsWith(domain)){
+                list.remove(user);
+            }
+        }
+
+    }
+
+
+    public String generateXML() {
+        String xml = "<usuario>\n";
+        xml += "<id>" + id + "</id>\n";
+        xml += "<password>" + password + "</password>\n";
+        xml += "<email>" + email + "</email>\n";
+        xml += "</usuario>\n";
+        return xml;
     }
 }
