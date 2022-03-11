@@ -1,3 +1,7 @@
+import java.lang.reflect.Member;
+import java.util.ArrayList;
+import java.util.Iterator;
+
 /**
  * Store details of club memberships.
  * 
@@ -7,13 +11,15 @@
 public class Club
 {
     // Define any necessary fields here ...
+
+    private ArrayList<Membership> members;
     
     /**
      * Constructor for objects of class Club
      */
     public Club()
     {
-        // Initialise any fields here ...
+        members = new ArrayList<Membership>();
         
     }
 
@@ -23,6 +29,7 @@ public class Club
      */
     public void join(Membership member)
     {
+        members.add(member);
     }
 
     /**
@@ -31,6 +38,46 @@ public class Club
      */
     public int numberOfMembers()
     {
-        return 0;
+        return members.size();
+    }
+
+    /**
+     * Determinar el número de miembros que se han unido en el mes indicado
+     * @param month El mes que nos interesa
+     * @return El número de miembros que se han unido ese mes
+     */
+     
+    public int joinedInMonth(int month){
+        int resultado = 0;
+
+        if(month < 1 || month > 12){
+            System.out.println("joinedInMonth - Mes incorrecto: " + month);
+        }else{
+
+            for (Membership item : members) {
+                if(item.getMonth() == month){
+                    resultado++;
+                }
+            }
+        }
+
+        return resultado;
+    }
+
+    public int purgue(int month){
+        int eliminados = 0;
+
+        Iterator<Membership> it = members.iterator();
+
+        while (it.hasNext()) {
+            Membership item = it.next();
+
+            if (item.getMonth() == month){
+                it.remove();
+                eliminados++;
+            }
+        }
+
+        return eliminados;
     }
 }
