@@ -12,3 +12,7 @@ Los nombres de los dos ficheros origen y el nombre del fichero destino se
 deben pasar como argumentos en la línea de comandos.
 Hay que tener en cuenta que los ficheros de donde se van cogiendo las
 líneas pueden tener tamaños diferentes.
+
+## Primos
+
+Escribe un programa que guarde en un fichero con nombre "primos.dat" los números primos que hay entre 1 y 500.
