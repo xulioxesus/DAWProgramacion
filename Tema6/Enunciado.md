@@ -13,6 +13,10 @@ deben pasar como argumentos en la línea de comandos.
 Hay que tener en cuenta que los ficheros de donde se van cogiendo las
 líneas pueden tener tamaños diferentes.
 
-## Primos
+## Escribe Primos
 
 Escribe un programa que guarde en un fichero con nombre "primos.dat" los números primos que hay entre 1 y 500.
+
+## Lee Primos
+
+Realiza un programa que lea el fichero "primos.dat" y muestre los números primos en el terminal.
