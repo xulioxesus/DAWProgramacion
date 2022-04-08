@@ -20,3 +20,7 @@ Escribe un programa que guarde en un fichero con nombre "primos.dat" los número
 ## Lee Primos
 
 Realiza un programa que lea el fichero "primos.dat" y muestre los números primos en el terminal.
+
+## Contar palabra
+
+Realiza un programa que diga el número de veces que se repite una palabra determinada en un fichero. Tanto el nombre del fichero como la palabra se deben pasar como argumentos en la línea de comandos.
