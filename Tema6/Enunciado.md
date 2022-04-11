@@ -24,3 +24,11 @@ Realiza un programa que lea el fichero "primos.dat" y muestre los números primo
 ## Contar palabra
 
 Realiza un programa que diga el número de veces que se repite una palabra determinada en un fichero. Tanto el nombre del fichero como la palabra se deben pasar como argumentos en la línea de comandos.
+
+## Eliminar comentarios de Java
+
+Dos versiones:
+
+Realiza un programa que elimine los comentarios de un programa escrito en Java. Solo los comentarios que empiezan por //
+
+Realiza un programa que elimine todos los comentarios de un programa escrito en Java.
