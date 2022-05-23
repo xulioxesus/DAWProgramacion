@@ -17,3 +17,5 @@ todo ello separado por tabuladores.
 - Crear un método que muestre un listado utilizando "agenda.dat".
 
 - Crear un método que muestre un listado utilizando "agendaObjetos.dat".
+
+- El programa se puede utilizar de forma no interactiva. Se le puede pasar la información sobre el usuario en la línea de comandos.
