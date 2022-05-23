@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
-
+    
 public class Ejercicio1 {
 
     private static void imprimirFichero(File e, int id) {
