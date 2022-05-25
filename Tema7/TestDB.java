@@ -1,8 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * TestDB
@@ -10,8 +6,8 @@ import java.sql.SQLException;
 public class TestDB {
 
     public static void main(String[] args) {
-        String sqlSelectAllPersons = "SELECT count(*) FROM Cliente";
-        String connectionUrl = "jdbc:mysql://192.168.204.171:3306/test?serverTimezone=UTC";
+        String consulta = "SELECT count(*) as total FROM Cliente";
+        String connectionUrl = "jdbc:mysql://10.0.2.4:3306/clientes";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -21,15 +17,12 @@ public class TestDB {
         }
 
         try (Connection conn = DriverManager.getConnection(connectionUrl, "phpmyadmin", "phpmyadmin");
-                PreparedStatement ps = conn.prepareStatement(sqlSelectAllPersons);
+                PreparedStatement ps = conn.prepareStatement(consulta);
                 ResultSet rs = ps.executeQuery()) {
 
             while (rs.next()) {
-                long id = rs.getLong("ID");
-                String name = rs.getString("FIRST_NAME");
-                String lastName = rs.getString("LAST_NAME");
-
-                // do something with the extracted data...
+                int total = rs.getInt("total");
+                System.out.println("Total: " + total);
             }
         } catch (SQLException e) {
             e.printStackTrace();
