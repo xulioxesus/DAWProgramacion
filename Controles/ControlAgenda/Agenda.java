@@ -1,5 +1,7 @@
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -12,9 +14,11 @@ public class Agenda {
     private final String nombreFicheroObjetos = "agendaObjetos.dat";
 
     private Scanner lector;
-    
+
     private FileWriter ficheroTexto;
     private PrintWriter escritorTexto;
+
+    
 
     private FileOutputStream ficheroObjetos;
     private ObjectOutputStream escritorObjetos;
@@ -66,8 +70,22 @@ public class Agenda {
         return nuevoUsuario;
     }
 
-    public void imprimirListadoTexto() {
+    public void imprimirListadoTexto() throws IOException{
+
+        BufferedReader lectorTexto = new BufferedReader(new FileReader(this.nombreFicheroTexto));
         
+        String linea = lectorTexto.readLine();
+        
+        while (linea != null){
+            String[] elementos = linea.split("\t");
+            System.out.println(elementos[0] + "," +
+                                elementos[1] + "," + 
+                                elementos[2] + "," +
+                                elementos[3]);
+            linea = lectorTexto.readLine();
+        }
+
+        lectorTexto.close();
     }
 
     public void imprimirListadoObjetos() {
