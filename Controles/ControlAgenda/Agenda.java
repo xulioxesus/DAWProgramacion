@@ -1,9 +1,12 @@
 import java.io.BufferedReader;
+import java.io.EOFException;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -61,7 +64,7 @@ public class Agenda {
         this.escritorTexto.println(nuevoUsuario);
 
         try {
-            this.escritorObjetos.writeObject(nuevoUsuario);
+            this.escritorObjetos.writeUnshared(nuevoUsuario);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -88,8 +91,25 @@ public class Agenda {
         lectorTexto.close();
     }
 
-    public void imprimirListadoObjetos() {
-        
+    public void imprimirListadoObjetos() throws FileNotFoundException, IOException {
+        ObjectInputStream lectorObjetos = new ObjectInputStream(new FileInputStream(nombreFicheroObjetos));
+
+        while(true){
+            try {
+                Usuario usuario = (Usuario) lectorObjetos.readObject();
+
+                System.out.println(usuario.getNombre() + "-" +
+                                usuario.getApellidos() + "-" + 
+                                usuario.getTelefono() + "-" +
+                                usuario.getEmail());
+
+            } catch (ClassNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (EOFException e) {
+                lectorObjetos.close();
+            }
+        }
     }
 
     public void terminar(){
